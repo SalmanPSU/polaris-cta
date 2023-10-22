@@ -3,7 +3,7 @@ import { LitElement, html, css } from 'lit';
 class PolarisCta extends LitElement {
   static get properties() {
     return {
-      text: {
+      name: {
         type: String,
       },
 
@@ -41,10 +41,11 @@ class PolarisCta extends LitElement {
   static get styles() {
     return css`
       :host {
-        display: inline-flex;
-        margin: 0 12px 12px 0;
+        display: block;
+        margin: 24px;
       }
-      
+
+      //From Midterm code by the professor
       .link:focus,
       .link:hover,
       :host([active]) .link{
@@ -56,29 +57,21 @@ class PolarisCta extends LitElement {
         text-decoration: underline;
       }
 
-      .link {
-        font-weight: bold;
-        text-decoration: none;
-        padding: 8px 4px;
-        border: 2px solid #444;
-        color: #444;
-        font-size: 16px;
-      }
-
-      .footer{
-        display: inline-flex;
-        border: 2px solid black;
-        padding: 2px;
-      }
-
-      .button {
-
-      }
-
       p {
         font-weight: 700;
         display: inline-block;
       }
+
+      :host([primaryOutlined]) p,
+    :host([primaryFilled]) p,
+    :host([tinted]) p {
+      color: #000;
+    }
+
+    :host([lightOutlined]) p,
+    :host([lightFilled]) p {
+      color: #fff;
+    }
 
       a {
         font-style: italic;
@@ -88,6 +81,41 @@ class PolarisCta extends LitElement {
         margin-left: 32px;
       }
 
+      :host([primaryOutlined]) a {
+      border: 2px solid #005fa9;
+      background-color: #fff;
+      color: #005fa9;
+      padding: 12px 32px;
+    }
+
+    :host([primaryFilled]) a {
+      border: 2px solid #005fa9;
+      background-color: #005fa9;
+      color: #fff;
+      padding: 12px 32px;
+    }
+
+    :host([tinted]) a {
+      border: 2px solid #fff;
+      background-color: #4f627c;
+      color: #b0e1ff;
+      padding: 12px 32px;
+    }
+
+    :host([lightOutlined]) a {
+      border: 2px solid #fff;
+      background-color: #011e44;
+      color: #a5e7fe;
+      padding: 12px 32px;
+    }
+
+    :host([lightFilled]) a {
+      border: 2px solid #a5e7fe;
+      background-color: #a5e7fe;
+      color: #011e44;
+      padding: 12px 32px;
+    }
+
       .wrapper {
         height: 48px;
         padding: 16px;
@@ -95,13 +123,27 @@ class PolarisCta extends LitElement {
         border: 2px solid black;
         background-color: white;
       }
+
+      :host([primaryOutlined]) .wrapper,
+      :host([primaryFilled]) .wrapper {
+      background-color: #fff;
+    }
+
+      :host([tinted]) .wrapper {
+      background-color: #e4e5e7;
+    }
+
+      :host([lightOutlined]) .wrapper,
+      :host([lightFilled]) .wrapper {
+      background-color: #011e44;
+    }
     `;
   }
 
   constructor() {
     super();
-    this.
-    this.header = 'My app';
+    this.name = 'Subscribe';
+    this.link = 'https://psu.edu';
   }
 
   render() {
