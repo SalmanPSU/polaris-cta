@@ -1,8 +1,41 @@
 import { LitElement, html, css } from 'lit';
 
 class PolarisCta extends LitElement {
-  static properties = {
-    header: { type: String },
+  static get properties() {
+    return {
+      text: {
+        type: String,
+      },
+
+      link: {
+        type: String,
+      },
+
+      primaryOutlined: {
+        type: Boolean,
+        reflect: true
+      },
+
+      primaryFilled: {
+        type: Boolean,
+        reflect: true
+      },
+
+      tinted: {
+        type: Boolean,
+        reflect: true
+      },
+
+      lightOutlined: {
+        type: Boolean,
+        reflect: true
+      },
+
+      lightFilled: {
+        type: Boolean,
+        reflect: true
+      },
+    }
   }
 
   static get styles() {
