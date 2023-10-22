@@ -63,44 +63,44 @@ class PolarisCta extends LitElement {
       }
 
       :host([primaryOutlined]) p,
-    :host([primaryFilled]) p,
-    :host([tinted]) p {
-      color: #000;
-    }
+      :host([primaryFilled]) p,
+      :host([tinted]) p {
+        color: #000;
+      }
 
-    :host([lightOutlined]) p,
-    :host([lightFilled]) p {
-      color: #fff;
-    }
+      :host([lightOutlined]) p,
+      :host([lightFilled]) p {
+        color: #fff;
+      }
 
       a {
         font-style: italic;
         font-weight: 700;
-        letter-spacing: .025rem;
+        text-decoration: none;
         display: inline-block;
         margin-left: 32px;
       }
 
       :host([primaryOutlined]) a {
-      border: 2px solid #005fa9;
-      background-color: #fff;
-      color: #005fa9;
-      padding: 12px 32px;
-    }
+        border: 2px solid #005fa9;
+        background-color: #fff;
+        color: #005fa9;
+        padding: 12px 32px;
+      }
 
-    :host([primaryFilled]) a {
-      border: 2px solid #005fa9;
-      background-color: #005fa9;
-      color: #fff;
-      padding: 12px 32px;
-    }
+      :host([primaryFilled]) a {
+        border: 2px solid #005fa9;
+        background-color: #005fa9;
+        color: #fff;
+        padding: 12px 32px;
+      }
 
-    :host([tinted]) a {
-      border: 2px solid #fff;
-      background-color: #4f627c;
-      color: #b0e1ff;
-      padding: 12px 32px;
-    }
+      :host([tinted]) a {
+        border: 2px solid #fff;
+        background-color: #4f627c;
+        color: #b0e1ff;
+        padding: 12px 32px;
+      }
 
     :host([lightOutlined]) a {
       border: 2px solid #fff;
