@@ -46,7 +46,7 @@ class PolarisCta extends LitElement {
       }
 
       /** From Midterm code by the professor - Dont use // for comments! */
-      .link:focus,
+      /* .link:focus,
       .link:hover,
       :host([active]) .link{
         background-color: #e4e5e7;
@@ -55,7 +55,7 @@ class PolarisCta extends LitElement {
         color: #005fa9;
         cursor: pointer;
         text-decoration: underline;
-      }
+      } */
 
       p {
         font-weight: 700;
