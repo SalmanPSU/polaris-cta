@@ -41,8 +41,8 @@ class PolarisCta extends LitElement {
   static get styles() {
     return css`
       :host {
-        display: block;
-        margin: 24px;
+        display: inline-flex;
+        margin: 32px;
       }
 
       /** From Midterm code by the professor - Dont use // for comments! */
