@@ -45,7 +45,7 @@ class PolarisCta extends LitElement {
         margin: 24px;
       }
 
-      //From Midterm code by the professor
+      /** From Midterm code by the professor - Dont use // for comments! */
       .link:focus,
       .link:hover,
       :host([active]) .link{
