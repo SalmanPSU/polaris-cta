@@ -3,12 +3,12 @@ import { LitElement, html, css } from 'lit';
 class PolarisCta extends LitElement {
   static get properties() {
     return {
-      primaryOutlined: {
+      primaryoutlined: {
         type: Boolean,
         reflect: true
       },
 
-      primaryFilled: {
+      primaryfilled: {
         type: Boolean,
         reflect: true
       },
@@ -18,12 +18,12 @@ class PolarisCta extends LitElement {
         reflect: true
       },
 
-      lightOutlined: {
+      lightoutlined: {
         type: Boolean,
         reflect: true
       },
 
-      lightFilled: {
+      lightfilled: {
         type: Boolean,
         reflect: true
       },
