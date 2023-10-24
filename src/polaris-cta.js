@@ -54,14 +54,14 @@ class PolarisCta extends LitElement {
         display: inline-block;
       }
 
-      :host([primaryOutlined]) p,
-      :host([primaryFilled]) p,
+      :host([primaryoutlined]) p,
+      :host([primaryfilled]) p,
       :host([tinted]) p {
         color: #000;
       }
 
-      :host([lightOutlined]) p,
-      :host([lightFilled]) p {
+      :host([lightoutlined]) p,
+      :host([lightfilled]) p {
         color: #fff;
       }
 
@@ -74,13 +74,13 @@ class PolarisCta extends LitElement {
         padding: 12px 32px;
       }
 
-      :host([primaryOutlined]) a {
+      :host([primaryoutlined]) a {
         border: 2px solid #005fa9;
         background-color: #fff;
         color: #005fa9;
       }
 
-      :host([primaryFilled]) a {
+      :host([primaryfilled]) a {
         border: 2px solid #005fa9;
         background-color: #005fa9;
         color: #fff;
@@ -92,13 +92,13 @@ class PolarisCta extends LitElement {
         color: #b0e1ff;
       }
 
-      :host([lightOutlined]) a {
+      :host([lightoutlined]) a {
       border: 2px solid #fff;
       background-color: #011e44;
       color: #a5e7fe;
       }
 
-      :host([lightFilled]) a {
+      :host([lightfilled]) a {
       border: 2px solid #a5e7fe;
       background-color: #a5e7fe;
       color: #011e44;
@@ -111,8 +111,8 @@ class PolarisCta extends LitElement {
         border: 2px solid black;
       }
 
-      :host([primaryOutlined]) .wrapper,
-      :host([primaryFilled]) .wrapper {
+      :host([primaryoutlined]) .wrapper,
+      :host([primaryfilled]) .wrapper {
       background-color: #fff;
       }
 
@@ -120,8 +120,8 @@ class PolarisCta extends LitElement {
       background-color: #e4e5e7;
       }
 
-      :host([lightOutlined]) .wrapper,
-      :host([lightFilled]) .wrapper {
+      :host([lightoutlined]) .wrapper,
+      :host([lightfilled]) .wrapper {
       background-color: #011e44;
       }
     `;
