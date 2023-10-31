@@ -11,12 +11,19 @@ class PolarisCta extends LitElement {
         type: String,
       },
 
+      type: {
+        type: String,
+        reflect: true
+      },
+
       outlined: {
         type: Boolean,
+        reflect: true
       },
 
       filled: {
         type: Boolean,
+        reflect: true
       },
     }
   }
@@ -24,7 +31,7 @@ class PolarisCta extends LitElement {
   static get styles() {
     return css`
       :host {
-        display: inline-block;
+        display: block;
         margin: 32px;
         --polaris-cta-white: #ffffff;
         --polaris-cta-gray:#E4E5E7;
@@ -40,7 +47,9 @@ class PolarisCta extends LitElement {
         font-weight: 700;
         text-decoration: none;
         display: inline-flex;
-        margin-top: -16px;
+        position: relative;
+        top: -32px;
+        left: 20px;
         padding: 12px 32px;
       }
 
@@ -76,6 +85,13 @@ class PolarisCta extends LitElement {
         border: 2px solid var(--polaris-cta-white);
         background-color: var(--polaris-cta-darkgray);
         color: var(--polaris-cta-lightblue);
+      }
+
+      :host([type="tinted"]) a:focus,
+      :host([type="tinted"]) a:hover {
+        border: 2px solid var(--polaris-cta-darkgray);
+        background-color: var(--polaris-cta-white);
+        color: var(--polaris-cta-darkgray);
       }
 
       :host([type="light"][outlined]) a {
@@ -116,7 +132,7 @@ class PolarisCta extends LitElement {
 
   render() {
     return html`
-      <a href="${this.link}"><slot>${this.text}</slot></a>
+      <a href="${this.link}" target=”_blank”><slot>${this.text}</slot></a>
     `;
   }
 }
